@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 15vh;
+    width: 70%;
+}
+
+section {
+    display: flex;
+    flex: 1;
+    margin-bottom: 3em;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h1 {
+    color: #000;
+    font-family: PT Serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.62px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    width: 278px;
+}
+
+.header-description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 439px;
+}
+
+.title-paragraph {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.description-paragraph {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-image {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+
+.name-image {
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.image {
+    width: 240px;
+    height: 350px;
+    flex-shrink: 0;
+}
+
+.text-footer {
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.vertical-text {
+    color: #000;
+    font-family: PT Serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left; 
+    writing-mode: vertical-lr;
+}
+
+[id="1"] {
+    margin-top: 5em;
+}
+
+[id="4"] {
+    margin-top: 5em;
+}
+
+@media (max-width: 3000px) {
+    section {
+        max-width: 1011px;
+    }
+
+}
+
+
+@media (max-width: 1015px) {
+    header {
+        width: 80%;
+        max-height: 150px;
+    }
+
+}
+
+@media (max-width: 912px) {
+    header {
+        width: 85%;
+        gap: 1em;
+        height: 20vh;
+    }
+
+    .image {
+        width: 140px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+
+    .container-image {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    section {
+        margin-top: 1em;
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 415px) {
+
+    header {
+        width: 90%;
+        gap: 1em;
+        height: 25vh;
+    }
+
+    footer {
+        margin-bottom: 1em;
+    }
+
+    section {
+        margin-top: 1em;
+        width: 90%;
+    }
+
+    .header-title {
+        width: 100%;
+    }
+
+    .image {
+        width: 140px;
+        height: 200px;
+        flex-shrink: 0;
+    }
+
+    .container-image {
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+    }
+
+    .name-image {
+        color: #000;
+        font-family: Poppins;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    [id="1"] {
+        margin-top: 5em;
+    }
+
+    [id="2"] {
+        margin-top: 5em;
+    }
+
+    [id="3"] {
+        margin-top: 5em;
+    }
+
+    [id="4"] {
+        margin-top: 0;
+    }
+
+    [id="container"] {
+        margin-bottom: 5em;
+    }
+
+}
+
+@media (max-width: 375px) {
+    header {
+        width: 90%;
+        gap: 1em;
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 280px) {
+    header {
+        width: 90%;
+        gap: 1em;
+        max-height: 220px;
+        margin-bottom: 50px;
+    }
+
+    .image {
+        width: 110px;
+        height: 170px;
+        flex-shrink: 0;
+    }
+
+    .container-image {
+        display: flex;
+        flex-direction: column;
+        width: 120px;
+    }
+
+}
+
+@media (min-width: 913px) {
+
+    header {
+        max-width: 800px;
+    }
+
+    .header-description {
+        width: 350px;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1032px;
+    }
+
+    section {
+        justify-content: center;
+        margin-top: 1em;
+        width: 60%;
+    }
+
+}
